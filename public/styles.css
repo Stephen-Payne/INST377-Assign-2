@@ -27,6 +27,7 @@ h1 {
 
 input {
     max-width: 960px;
+    margin-bottom: 10px;
 }
 
 ul.results {
