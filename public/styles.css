@@ -24,13 +24,22 @@ h1 {
     border-radius: 4px;
   }
 
+ul {
+    list-style-type: none;
+}
+
 li {
     background-image: linear-gradient(rgb(255, 255, 108), rgb(241, 241, 191));
     margin: 15px;
     padding: 5px;
+    max-width: 960px;
 }  
 
 address {
     display: block;
     font-style: italic;
   }
+
+#filcontainer {
+    justify-content: center;
+}
