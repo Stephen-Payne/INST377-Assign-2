@@ -23,3 +23,9 @@ h1 {
     flex-wrap: nowrap;
     border-radius: 4px;
   }
+
+li {
+    background-image: linear-gradient(yellow, rgb(236, 236, 177));
+    margin: 15px;
+    padding: 5px;
+}  
