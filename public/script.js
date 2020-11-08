@@ -88,19 +88,9 @@ function updateList() {
       entryEle.insertAdjacentElement('beforeend', entryCategory);
 
       // Create element for address
-      const entryAddress = document.createElement('p');
-      entryAddress.innerText = entry.address_line_1;
+      const entryAddress = document.createElement('address');
+      entryAddress.innerHTML = `${entry.address_line_1}<br> ${entry.city}<br> ${entry.zip}`
       entryEle.insertAdjacentElement('beforeend', entryAddress);
-
-      // Create element for city
-      const entryCity = document.createElement('p');
-      entryCity.innerText = entry.city;
-      entryEle.insertAdjacentElement('beforeend', entryCity);
-
-      // Create element for zipcode
-      const entryZip = document.createElement('p');
-      entryZip.innerText = entry.zip;
-      entryEle.insertAdjacentElement('beforeend', entryZip);
     }
 }
 
