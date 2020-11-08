@@ -3,7 +3,6 @@
 /* eslint-disable no-unused-vars */
 import express from 'express';
 import dotenv from 'dotenv';
-//import countries from './public/lab_6/countries.js'
 import fetch from 'node-fetch'
 
 dotenv.config();
@@ -31,7 +30,7 @@ app.route('/api')
     const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
     const json = await data.json();
     console.log('Fetch request data', json);
-    res.json(json);
+    res.send(json);
   });
 
 app.listen(port, () => {
