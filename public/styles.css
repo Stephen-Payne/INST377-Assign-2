@@ -29,3 +29,8 @@ li {
     margin: 15px;
     padding: 5px;
 }  
+
+address {
+    display: block;
+    font-style: italic;
+  }
