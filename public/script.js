@@ -27,8 +27,6 @@ function updateList() {
     for (let i = 0; i < 10; i++) {
       const entry = list[i];
 
-      console.log(entry);
-
       // Insert entry at end of list
       const entryEle = document.createElement('li');
       listEle.insertAdjacentElement('beforeend', entryEle);
@@ -38,10 +36,25 @@ function updateList() {
       entryHeader.innerText = entry.name;
       entryEle.insertAdjacentElement('beforeend', entryHeader);
 
-      // let entryHeader = document.createElement('p');
-      // let entryHeader = document.createElement('p');
-      // let entryHeader = document.createElement('p');
-      // let entryHeader = document.createElement('p');
+      // Create element for category
+      const entryCategory = document.createElement('p');
+      entryCategory.innerText = entry.category;
+      entryEle.insertAdjacentElement('beforeend', entryCategory);
+
+      // Create element for address
+      const entryAddress = document.createElement('p');
+      entryAddress.innerText = entry.address_line_1;
+      entryEle.insertAdjacentElement('beforeend', entryAddress);
+
+      // Create element for city
+      const entryCity = document.createElement('p');
+      entryCity.innerText = entry.city;
+      entryEle.insertAdjacentElement('beforeend', entryCity);
+
+      // Create element for zipcode
+      const entryZip = document.createElement('p');
+      entryZip.innerText = entry.zip;
+      entryEle.insertAdjacentElement('beforeend', entryZip);
     }
 }
 
