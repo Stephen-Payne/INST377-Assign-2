@@ -29,14 +29,14 @@ input {
     max-width: 960px;
 }
 
-ul {
+ul.results {
     list-style-type: none;
 }
 
 li {
     background-image: linear-gradient(rgb(255, 255, 108), rgb(241, 241, 191));
     margin: 15px;
-    padding: 5px;
+    padding: 10px;
     max-width: 960px;
 }  
 
