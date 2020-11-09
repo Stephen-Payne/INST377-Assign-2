@@ -45,6 +45,10 @@ function filterAndRandomizeList() {
     const searchEle = document.getElementsByTagName('input')[0];
     const query = searchEle.value;
 
+    // Return an empty list if the query is empty
+    if (query === '')
+      return []
+
     // Filter list by category or zip code
     let filteredList = [];
     if (!isNaN(query))
